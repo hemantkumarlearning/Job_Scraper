@@ -34,8 +34,8 @@ A Python-based job listings aggregator that scrapes data from multiple dynamic j
 #### 1. Clone the repository
 
 ```
-git clone https://github.com/yourusername/job-scraping-dashboard.git
-cd job-scraping-dashboard
+git clone https://github.com/hemantkumarlearning/Job_Scraper.git
+cd Job_Scraper
 ```
 
 #### 2. Create a virtual environment
