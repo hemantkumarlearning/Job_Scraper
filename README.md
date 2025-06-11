@@ -28,3 +28,55 @@ A Python-based job listings aggregator that scrapes data from multiple dynamic j
 
 - Docker & Docker Compose installed
 - (Optional) Python 3.11+ and PostgreSQL (if running locally without Docker)
+
+### Run Manually (Without Docker)
+
+#### 1. Clone the repository
+
+```
+git clone https://github.com/yourusername/job-scraping-dashboard.git
+cd job-scraping-dashboard
+```
+
+#### 2. Create a virtual environment
+
+```
+python -m venv venv
+venv\Scripts\activate
+
+```
+
+#### 3. Set the database URL (env variable)
+
+```
+DATABASE_URL=postgresql://user:password@localhost:5432/jobsdb
+```
+
+#### 3. Go to backend folder and install dependencies
+
+```
+cd backend
+pip install -r requirements.txt
+```
+
+#### 4. Run the scraper
+
+```
+python scheduler.py
+```
+This will scrape job listings and insert them into your PostgreSQL database and run every 24 hrs
+
+#### 3. Go to frontend folder and install dependencies
+
+```
+cd .
+cd frontend
+pip install -r requirements.txt
+```
+
+#### 5. Run the Streamlit dashboard
+
+```
+streamlit run streamlit_app.py
+```
+
